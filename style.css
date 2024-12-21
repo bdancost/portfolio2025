@@ -3,15 +3,191 @@ html {
 }
 
 body {
-  background-image: url(./assets/image_fondo02.png);
-  opacity: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  line-height: 2.6rem;
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.9);
-  opacity: 50%;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  opacity: 10%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0, 0.9);
+  height: 10rem;
+  margin-bottom: 10rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #ff577f;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+}
+
+nav a:hover {
+  color: #a0152c;
+  transition: color 0.2s ease;
+}
+
+nav a i {
+  margin-right: 0.5rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: justify;
+  margin: 0 0 1.5rem 0;
+}
+
+h3 {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: justify;
+  margin: 0 0 1.5rem 0;
+}
+
+p {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Home */
+
+#home-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rem;
+  margin: 0 auto;
+}
+
+#home-counts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+#home-container img {
+  position: relative;
+  display: block;
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  margin: 2rem auto;
+}
+
+.circulo {
+  position: absolute;
+  right: 145px;
+  top: 200px;
+  width: 42rem;
+  height: 56rem;
+  border-radius: 1rem;
+  border: 2px solid #ff577f;
+  z-index: -1;
+  margin: 0 0 1.5rem 0;
+}
+
+#home-container p {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 0 1.5rem 0;
+}
+
+#home-counts a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 0 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid #ff577f;
+  border-radius: 1rem;
+}
+
+#home-counts a:hover {
+  background-color: #ff577f;
+  transition: background-color 0.2s ease;
+}
+
+#home-counts a i {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #ff577f;
+  align-items: center;
+}
+
+#home-counts a p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#redes {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem 0;
 }
