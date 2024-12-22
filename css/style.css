@@ -22,7 +22,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding-top: 15rem;
+  padding-top: 20rem;
   overflow-x: hidden;
 }
 
@@ -141,6 +141,7 @@ p {
   font-weight: 400;
   text-align: justify;
   margin: 0 0 1.5rem 0;
+  line-height: 3rem;
 }
 
 /* Home */
@@ -164,6 +165,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: justify;
+  gap: 2rem;
 }
 
 #home img {
@@ -190,7 +192,7 @@ p {
 .circulo {
   position: absolute;
   right: 160px;
-  top: 150px;
+  top: 200px;
   width: 45rem;
   height: 59rem;
   border-radius: 1rem;
@@ -203,13 +205,12 @@ p {
   left: 9.8%;
 }
 
-#home p,
-#habilidades p {
+#home p {
   color: var(--color-fonts);
   font-size: 1.9rem;
   font-weight: 400;
   text-align: justify;
-  margin: 0 0 8rem 0;
+  margin: 0 0 6rem 0;
 }
 
 #home-counts a,
@@ -274,7 +275,7 @@ p {
   width: 90vw;
   height: 1px;
   background-color: var(--line-height);
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 /* Home Habilidades */
@@ -284,8 +285,8 @@ p {
 }
 
 .img-habilidades {
-  width: 600px;
-  height: 300px;
+  width: 90rem;
+  height: 41rem;
   background-color: var(--primary-color);
   position: relative;
   display: flex;
@@ -301,9 +302,29 @@ p {
 
 .foto-habilidades {
   position: absolute;
-  width: 90%;
+  top: -15px;
+  right: -1px;
+  width: 96%;
   object-fit: cover;
   object-position: center;
-  border-radius: 1rem;
+  border-radius: 50%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#home-counts-habilidades h1 {
+  position: absolute;
+  top: 980px;
+  right: 495px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#home-counts-habilidades p {
+  color: var(--color-fonts);
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-align: justify;
 }
