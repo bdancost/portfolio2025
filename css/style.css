@@ -9,60 +9,34 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.fundo {
+  position: relative;
   background-image: url("./assets/image_fondo02.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height: 2.6rem;
-  width: 100vw;
   height: 100vh;
-  margin: 0;
   padding-top: 20rem;
   overflow-x: hidden;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com transparência */
+  object-position: center;
+  z-index: -2;
 }
 
 body::before {
   content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vw;
-  background-image: url("./assets/image_fondo02.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.5;
-  z-index: -1; /* Garante que a imagem de fundo fique atrás de tudo */
-}
-
-body::after {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vw;
-  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
-  z-index: -1; /* Garante que a camada preta fique atrás do conteúdo */
-}
-
-.fundo {
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com transparência */
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* Garante que a imagem de fundo fique atrás de tudo */
 }
 
 header {
@@ -293,8 +267,6 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
-  object-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%;
   margin: 2rem auto;
@@ -308,7 +280,6 @@ p {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #home-counts-habilidades h1 {
