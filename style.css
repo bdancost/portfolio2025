@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ff577f;
+  --secondary-color: #a0152c;
+  --color-fonts: #fff;
+  --line-height: #857b7e;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,7 +22,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding: 0;
+  padding-top: 15rem;
   overflow-x: hidden;
 }
 
@@ -59,6 +66,10 @@ body::after {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +81,7 @@ header {
     0.9
   ); /* Cor preta semi-transparente para o cabeçalho */
   height: 10rem;
-  margin-bottom: 10rem;
+  z-index: 1000;
 }
 
 nav {
@@ -91,7 +102,7 @@ nav li {
 }
 
 nav a {
-  color: #ff577f;
+  color: var(--primary-color);
   text-decoration: none;
   align-items: center;
   font-size: 1.6rem;
@@ -100,7 +111,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #a0152c;
+  color: var(--secondary-color);
   transition: color 0.2s ease;
 }
 
@@ -109,7 +120,7 @@ nav a i {
 }
 
 h1 {
-  color: white;
+  color: var(--color-fonts);
   font-size: 3.2rem;
   font-weight: 700;
   text-align: justify;
@@ -117,7 +128,7 @@ h1 {
 }
 
 h3 {
-  color: white;
+  color: var(--color-fonts);
   font-size: 2.4rem;
   font-weight: 700;
   text-align: justify;
@@ -125,7 +136,7 @@ h3 {
 }
 
 p {
-  color: white;
+  color: var(--color-fonts);
   font-size: 1.6rem;
   font-weight: 400;
   text-align: justify;
@@ -134,7 +145,7 @@ p {
 
 /* Home */
 
-#home-container,
+#home,
 #habilidades {
   width: 80%;
   display: flex;
@@ -155,7 +166,7 @@ p {
   text-align: justify;
 }
 
-#home-container img,
+#home img,
 #habilidades img {
   position: relative;
   display: block;
@@ -168,15 +179,23 @@ p {
   margin: 2rem auto;
 }
 
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 .circulo {
   position: absolute;
-  right: 145px;
-  top: 200px;
-  width: 42rem;
-  height: 56rem;
+  right: 160px;
+  top: 150px;
+  width: 45rem;
+  height: 59rem;
   border-radius: 1rem;
-  border: 2px solid #ff577f;
-  margin: 0 0 1.5rem 0;
+  border: 2px solid var(--primary-color);
 }
 
 #home-counts h1 {
@@ -185,9 +204,9 @@ p {
   left: 9.8%;
 }
 
-#home-container p,
+#home p,
 #habilidades p {
-  color: white;
+  color: var(--color-fonts);
   font-size: 1.9rem;
   font-weight: 400;
   text-align: justify;
@@ -206,24 +225,24 @@ p {
   text-align: justify;
   margin: 0 0 1.5rem 0;
   padding: 1.5rem;
-  border: 1px solid #ff577f;
+  border: 1px solid var(--primary-color);
   border-radius: 1rem;
 }
 
 #home-counts a:hover {
-  background-color: #ff577f;
+  background-color: var(--primary-color);
   transition: background-color 0.2s ease;
 }
 
 #home-counts a i {
   margin-right: 0.5rem;
   font-size: 2rem;
-  color: #ff577f;
+  color: var(--primary-color);
   align-items: center;
 }
 
 #home-counts a p {
-  color: white;
+  color: var(--color-fonts);
   font-size: 1.8rem;
   font-weight: 400;
   text-align: justify;
@@ -242,7 +261,7 @@ p {
 .line-bottom {
   width: 90vw;
   height: 1px;
-  background-color: #857b7e;
+  background-color: var(--line-height);
   margin: 50px auto;
 }
 
