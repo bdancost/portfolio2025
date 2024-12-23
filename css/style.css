@@ -11,7 +11,7 @@ html {
 
 .fundo {
   position: relative;
-  background-image: url("./assets/image_fondo02.png");
+  background-image: url("../assets/image_fondo02.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,23 +19,20 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height: 2.6rem;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
   padding-top: 20rem;
-  overflow-x: hidden;
-  object-fit: cover;
   background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com transparência */
-  object-position: center;
-  z-index: -2;
 }
 
-body::before {
+.fundo::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -1; /* Garante que a imagem de fundo fique atrás de tudo */
 }
 
@@ -145,37 +142,26 @@ p {
 #home img {
   position: relative;
   display: block;
-  width: 90%;
+  width: 80%;
   object-fit: cover;
   object-position: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 1rem;
   margin: 2rem auto;
 }
 
-.foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 1rem;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
 .circulo {
   position: absolute;
-  right: 160px;
-  top: 200px;
-  width: 45rem;
-  height: 59rem;
+  right: 190px;
+  top: 205px;
+  width: 40rem;
+  height: 53rem;
   border-radius: 1rem;
   border: 2px solid var(--primary-color);
 }
 
 #home-counts h1 {
   position: absolute;
-  top: 30%;
+  top: 12%;
   left: 9.8%;
 }
 
@@ -267,7 +253,6 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%;
   margin: 2rem auto;
 }
@@ -284,7 +269,7 @@ p {
 
 #home-counts-habilidades h1 {
   position: absolute;
-  top: 980px;
+  top: 900px;
   right: 495px;
   width: 100%;
   display: flex;
