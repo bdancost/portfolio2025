@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #ff577f;
-  --secondary-color: #a0152c;
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
   --color-fonts: #fff;
   --line-height: #857b7e;
 }
@@ -16,7 +16,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 2.6rem;
   min-height: 100vh;
@@ -76,13 +76,16 @@ nav a {
   color: var(--primary-color);
   text-decoration: none;
   align-items: center;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: bold;
   margin: 0 0 1.5rem 0;
 }
 
 nav a:hover {
   color: var(--secondary-color);
+  background-color: var(--color-fonts);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   transition: color 0.2s ease;
 }
 
