@@ -90,6 +90,7 @@ body {
 
 .certificado p {
   margin-bottom: 0.8rem;
+  text-align: justify;
 }
 
 .link-certificado {
