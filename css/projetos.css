@@ -5,6 +5,35 @@
   --line-height: #857b7e;
 }
 
+#home-projetos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+#home-projetos p {
+  position: relative;
+  color: var(--color-fonts);
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+#projetos {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 0 auto;
+}
+
+#home-projetos h1 {
+  position: absolute;
+  top: 61.9%;
+}
+
 .projetos-lista {
   display: flex;
   flex-wrap: wrap;
@@ -13,11 +42,14 @@
 }
 
 .projeto {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  min-height: 400px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 10px;
-  overflow: hidden;
   padding: 10px;
   background-color: #f7f7f715;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -30,10 +62,10 @@
 
 .projeto img {
   width: 100%;
-  height: 350px;
+  height: 340px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  border: 3px solid var(--secondary-color);
+  border: 3px solid var(--color-fonts);
 }
 
 .projeto h2 {
@@ -51,4 +83,37 @@
 .projeto:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.github-btn {
+  margin-top: auto;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-button {
+  width: 100%;
+  height: 5rem;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  padding: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--color-fonts);
+  cursor: pointer;
+}
+
+.github-button:hover {
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+  color: var(--color-fonts);
 }
