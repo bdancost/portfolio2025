@@ -8,45 +8,52 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="fundo">
-    <header>
-      <nav>
-        <ul>
-          <a href="#home"
-            ><li><i class="bx bx-home"></i>Home</li></a
-          >
-          <a href="#habilidades"
-            ><li><i class="bx bx-desktop"></i>Habilidades</li></a
-          >
-          <a href="#projetos"
-            ><li><i class="bx bx-building"></i>Projetos</li></a
-          >
+  <body class="relative min-h-screen bg-cover bg-center bg-fixed bg-[url('../assets/image_fondo02.png')] text-white font-sans">
+    <div class="absolute inset-0 bg-black bg-opacity-90 -z-10"></div>
+    <header class="fixed top-0 w-full bg-black bg-opacity-90 text-white shadow-md">
+      <nav class="container mx-auto flex justify-center py-4">
+        <ul class="flex gap-16">
+          <li>
+            <a href="#home" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
+              <i class="bx bx-home"></i>Home
+            </a>
+          </li>
+          <li>
+            <a href="#habilidades" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
+              <i class="bx bx-desktop"></i>Habilidades
+            </a>
+          </li>
+          <li>
+            <a href="#projetos" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
+              <i class="bx bx-building"></i>Projetos
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!--  Home  -->
-    <section id="home">
-      <div id="home-counts">
-        <h1>Daniel Fernandes</h1>
-        <p>
+    <section id="home" class="flex flex-col md:flex-row items-center gap-12 px-6 py-20">
+      <div id="home-counts" class="text-center md:text-left max-w-lg">
+        <h1 class="text-4xl font-bold text-white mb-4">Daniel Fernandes</h1>
+        <p class="text-lg text-white leading-relaxed text-center">
           Olá, sou Daniel, estudante do 5º semestre de Análise e Desenvolvimento
           de Sistemas (ADS) tenho 36 anos. Tenho conhecimento prático com HTML,
           CSS, Javascript, Tailwind, TypeScript, React, Python e SQL, e estou em
           constante aprendizado para me aperfeiçoar como desenvolvedor
           Front-End.
         </p>
-        <div id="redes"></div>
+        <div id="redes" class="flex gap-4 mt-6"></div>
           <h3>Acesse minhas redes:</h3>
-          <a href="https://github.com/bdancost" target="_blank">
+          <a href="https://github.com/bdancost" target="_blank" class="bg-primary text-white py-2 px-4 rounded hover:bg-secondary">
             <p><i class="bx bxl-github"></i>GitHub</p>
           </a>
           <a
             href="https://www.linkedin.com/in/daniel-fernandes1988/"
-            target="_blank"
+            target="_blank" class="bg-primary text-white py-2 px-4 rounded hover:bg-secondary"
           >
             <p><i class="bx bxl-linkedin-square"></i>LinkedIn</p>
           </a>
@@ -54,35 +61,35 @@
       </div>
 
       <div class="circulo"></div>
-      <div><img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" /></div>
+      <div><img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" class="rounded-lg w-full max-w-sm" /></div>
     </section>
 
     <div class="line-bottom"></div>
 
     <!--  Habilidades  -->
-    <section id="habilidades">
-      <div id="home-counts-habilidades">
-        <h1>Minhas Habilidades</h1>
-        <p>
+    <section id="habilidades" class="flex flex-col md:flex-row items-center gap-12 px-6 py-20">
+      <div id="home-counts-habilidades" class="w-4/5 flex flex-col items-center text-justify gap-6">
+        <h1 class="text-4xl font-bold">Minhas Habilidades</h1>
+        <p class="text-lg">
           Além das habilidades técnicas, destaco minha capacidade de resolver
           problemas de maneira criativa e de aprender rapidamente novas
           tecnologias. Acredito que a combinação de dedicação, curiosidade e foco
           nos detalhes me permite entregar soluções inovadoras e funcionais.
         </p>
-        <p>Meu objetivo é crescer como profissional e contribuir para o
+        <p class="text-lg">Meu objetivo é crescer como profissional e contribuir para o
           desenvolvimento de sistemas que sejam não apenas eficientes, mas também
           significativos.
         </p>
-        <div class="certificados">
-          <a href="./certificados.html" target="_blank">
+        <div class="certificados mt-8">
+          <a href="./certificados.html" target="_blank" class="flex items-center justify-center gap-2 px-6 py-2 border-2 border-primary-color text-primary-color hover:bg-primary hover:text-white rounded-lg transition-all">
             <i class="bx bx-medal"></i>Certificados
           </a>
         </div>
       </div>
 
       <div class="circulo-habilidades"></div>
-      <div class="img-habilidades">
-        <img class="foto-habilidades" src="./assets/image_02.webp" alt="Imagem do código" />
+      <div class="img-habilidades relative mt-20 w-80 h-80 bg-primary-color rounded-full flex items-center justify-center">
+        <img src="./assets/image_02.webp" alt="Imagem do código" class="absolute inset-0 w-[90%] rounded-full object-cover" />
       </div>
     </section>
 
