@@ -51,16 +51,17 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 3rem;
   border-radius: 1rem;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   color: var(--color-fonts);
+  font-weight: 500;
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .titulo {
   text-align: center;
   font-size: 2.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
   text-transform: uppercase;
 }
 
@@ -71,7 +72,7 @@ body {
 }
 
 .certificado {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   padding: 2rem;
   border-radius: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -83,7 +84,7 @@ body {
 }
 
 .certificado h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #ffcc00;
 }

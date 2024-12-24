@@ -8,52 +8,46 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/projetos.css">
   </head>
-  <body class="relative min-h-screen bg-cover bg-center bg-fixed bg-[url('../assets/image_fondo02.png')] text-white font-sans">
-    <div class="absolute inset-0 bg-black bg-opacity-90 -z-10"></div>
-    <header class="fixed top-0 w-full bg-black bg-opacity-90 text-white shadow-md">
-      <nav class="container mx-auto flex justify-center py-4">
-        <ul class="flex gap-16">
-          <li>
-            <a href="#home" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
-              <i class="bx bx-home"></i>Home
-            </a>
-          </li>
-          <li>
-            <a href="#habilidades" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
-              <i class="bx bx-desktop"></i>Habilidades
-            </a>
-          </li>
-          <li>
-            <a href="#projetos" class="flex items-center gap-2 text-primary bg hover:bg-gray-100 hover:text-secondary text-lg font-bold transition p-1 rounded">
-              <i class="bx bx-building"></i>Projetos
-            </a>
-          </li>
+  <body class="fundo">
+    <header>
+      <nav>
+        <ul>
+          <a href="#home"
+            ><li><i class="bx bx-home"></i>Home</li></a
+          >
+          <a href="#habilidades"
+            ><li><i class="bx bx-desktop"></i>Habilidades</li></a
+          >
+          <a href="#projetos"
+            ><li><i class="bx bx-building"></i>Projetos</li></a
+          >
         </ul>
       </nav>
     </header>
 
     <!--  Home  -->
-    <section id="home" class="flex flex-col md:flex-row items-center gap-12 px-6 py-20">
-      <div id="home-counts" class="text-center md:text-left max-w-lg">
-        <h1 class="text-4xl font-bold text-white mb-4">Daniel Fernandes</h1>
-        <p class="text-lg text-white leading-relaxed text-center">
+    <section id="home">
+      <div id="home-counts">
+        <h1>Daniel Fernandes</h1>
+        <p>
           Olá, sou Daniel, estudante do 5º semestre de Análise e Desenvolvimento
           de Sistemas (ADS) tenho 36 anos. Tenho conhecimento prático com HTML,
           CSS, Javascript, Tailwind, TypeScript, React, Python e SQL, e estou em
           constante aprendizado para me aperfeiçoar como desenvolvedor
           Front-End.
         </p>
-        <div id="redes" class="flex gap-4 mt-6"></div>
+        <div id="redes"></div>
           <h3>Acesse minhas redes:</h3>
-          <a href="https://github.com/bdancost" target="_blank" class="bg-primary text-white py-2 px-4 rounded hover:bg-secondary">
+          <a href="https://github.com/bdancost" target="_blank">
             <p><i class="bx bxl-github"></i>GitHub</p>
           </a>
           <a
             href="https://www.linkedin.com/in/daniel-fernandes1988/"
-            target="_blank" class="bg-primary text-white py-2 px-4 rounded hover:bg-secondary"
+            target="_blank"
           >
             <p><i class="bx bxl-linkedin-square"></i>LinkedIn</p>
           </a>
@@ -61,35 +55,71 @@
       </div>
 
       <div class="circulo"></div>
-      <div><img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" class="rounded-lg w-full max-w-sm" /></div>
+      <div><img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" /></div>
     </section>
 
     <div class="line-bottom"></div>
 
     <!--  Habilidades  -->
-    <section id="habilidades" class="flex flex-col md:flex-row items-center gap-12 px-6 py-20">
-      <div id="home-counts-habilidades" class="w-4/5 flex flex-col items-center text-justify gap-6">
-        <h1 class="text-4xl font-bold">Minhas Habilidades</h1>
-        <p class="text-lg">
+    <section id="habilidades">
+      <div id="home-counts-habilidades">
+        <h1>Minhas Habilidades</h1>
+        <p>
           Além das habilidades técnicas, destaco minha capacidade de resolver
           problemas de maneira criativa e de aprender rapidamente novas
           tecnologias. Acredito que a combinação de dedicação, curiosidade e foco
           nos detalhes me permite entregar soluções inovadoras e funcionais.
         </p>
-        <p class="text-lg">Meu objetivo é crescer como profissional e contribuir para o
+        <p>Meu objetivo é crescer como profissional e contribuir para o
           desenvolvimento de sistemas que sejam não apenas eficientes, mas também
           significativos.
         </p>
-        <div class="certificados mt-8">
-          <a href="./certificados.html" target="_blank" class="flex items-center justify-center gap-2 px-6 py-2 border-2 border-primary-color text-primary-color hover:bg-primary hover:text-white rounded-lg transition-all">
+        <div class="certificados">
+          <a id="certificados-btn" href="./certificados.html" target="_blank">
             <i class="bx bx-medal"></i>Certificados
           </a>
         </div>
       </div>
 
       <div class="circulo-habilidades"></div>
-      <div class="img-habilidades relative mt-20 w-80 h-80 bg-primary-color rounded-full flex items-center justify-center">
-        <img src="./assets/image_02.webp" alt="Imagem do código" class="absolute inset-0 w-[90%] rounded-full object-cover" />
+      <div class="img-habilidades">
+        <img class="foto-habilidades" src="./assets/image_02.webp" alt="Imagem do código" />
+      </div>
+    </section>
+
+    <div class="line-bottom"></div>
+
+    <!-- Projetos -->
+
+    <section id="projetos">
+      <div id="home-projetos">
+        <h1>Meus Projetos</h1>
+        <p>Nesta seção, apresento projetos desenvolvidos com foco em tecnologias modernas, como JavaScript, TypeScript, React e integração com APIs. Essas experiências me permitiram criar aplicações interativas, escaláveis e voltadas para a experiência do usuário.
+
+          Cada projeto aqui demonstra minha habilidade em desenvolver interfaces dinâmicas, consumir APIs de forma eficiente e aplicar boas práticas de desenvolvimento, como componentes reutilizáveis e escrita de código limpo e estruturado.</p>
+      </div>
+      <div class="projetos-lista">
+        <div class="projeto">
+          <a href="https://spotify-smoky-delta.vercel.app/" target="_blank">
+            <img src="./assets/projeto01.png" alt="Projeto Spotify">
+            <h2>🎵 Reprodutor de Música Estilizado</h2>
+            <p> 
+              Um reprodutor de música moderno, interativo e funcional inspirado na interface do Spotify. Este projeto foi desenvolvido com HTML, CSS e JavaScript, utilizando Bootstrap Icons para melhorar a experiência visual.</p></a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://burguer-dev-xi.vercel.app/" target="_blank">
+            <img src="./assets/projeto02.png" alt="Projeto 2">
+            <h2>🍔 Dev Burguer</h2>
+            <p>Um site para uma lanchonete fictícia que exibe o menu com imagens, descrições detalhadas dos produtos e preços. Ele também possui a funcionalidade de adicionar itens ao carrinho de compras, com um design simples, mas responsivo, utilizando Tailwind CSS para o layout, e várias funcionalidades interativas baseadas em JavaScript.</p></a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://open-weather-api-seven.vercel.app/" target="_blank">
+            <img src="./assets/projeto03.png" alt="Projeto 3">
+            <h2>🌤️ Clima Agora</h2>
+            <p>Este é um aplicativo simples de previsão do tempo que permite verificar as condições climáticas de qualquer cidade, com base em dados fornecidos pela API do OpenWeather. O projeto exibe temperatura, umidade, velocidade do vento e atualiza o fundo com uma imagem da cidade consultada.</p></a>
+        </div>
       </div>
     </section>
 
