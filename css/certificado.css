@@ -11,16 +11,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-}
-
 .fundo-certificados {
   position: relative;
   background-image: url("../assets/image_fondo02.png");
