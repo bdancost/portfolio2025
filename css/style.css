@@ -131,59 +131,39 @@ p {
   width: 80%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  gap: 12rem;
   margin: 0 auto;
 }
 
 #home-counts,
 #home-counts-habilidades {
-  width: 100%;
+  width: 50%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: justify;
   gap: 2rem;
 }
 
-#home img {
-  position: relative;
-  display: block;
-  width: 80%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 1rem;
-  margin: 2rem auto;
-}
-
-.circulo {
-  position: absolute;
-  right: 190px;
-  top: 205px;
-  width: 40rem;
-  height: 53rem;
-  border-radius: 1rem;
-  border: 2px solid var(--primary-color);
-}
-
 #home-counts h1 {
-  position: absolute;
-  top: 7.6%;
-  left: 10%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  text-align: center;
 }
 
 #home p {
-  color: var(--color-fonts);
   font-size: 1.9rem;
-  font-weight: 400;
   text-align: justify;
   margin: 0 0 2rem 0;
 }
 
-#home-counts a,
-.certificados {
+#home-counts a {
   width: 60%;
   height: 5rem;
   display: flex;
@@ -234,19 +214,49 @@ p {
 }
 
 #redes {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0 1.5rem 0;
+  margin: 3rem 0 1rem 0;
+  gap: 2rem;
+}
+
+.img-home {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circulo {
+  position: absolute;
+  top: -3%;
+  left: 4%;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 2px solid var(--primary-color);
+  z-index: -1;
+}
+
+.img-home img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  z-index: 1;
 }
 
 .line-bottom {
   width: 90vw;
   height: 1px;
   background-color: var(--line-height);
-  margin: 50px auto;
+  margin: 100px auto 30px auto;
 }
 
 /* Home Habilidades */
@@ -255,53 +265,69 @@ p {
   margin-top: 15rem;
 }
 
-.habilidades-texto {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  font-size: 1.9rem;
-  margin: 10rem 0 2rem 0;
-}
-
-.img-habilidades {
-  width: 90rem;
-  height: 41rem;
-  background-color: var(--primary-color);
+#home-counts-habilidades h1 {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 2rem auto;
+  top: 0%;
+  left: 0%;
+  text-align: center;
 }
 
-.foto-habilidades {
+#habilidades p {
+  line-height: 3rem;
+  font-size: 1.9rem;
+  text-align: justify;
+  margin: 0;
+}
+
+.certificados {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 4rem auto 1rem auto;
+  padding: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.img-home-habilidades {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circulo-habilidades {
   position: absolute;
-  top: -15px;
-  right: -1px;
-  width: 96%;
+  top: 3%;
+  right: 2%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  z-index: -1;
+}
+
+.img-home-habilidades img {
+  position: relative;
+  width: 97%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-}
-
-#home-counts-habilidades h1 {
-  position: absolute;
-  top: 910px;
-  right: 479px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  z-index: 1;
 }
 
 footer {
   width: 100%;
-  height: 15rem;
+  height: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,4 +343,5 @@ footer p {
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
+  color: #ccc;
 }

@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/projetos.css" />
   </head>
   <body class="fundo">
     <header>
@@ -40,7 +40,7 @@
           constante aprendizado para me aperfeiçoar como desenvolvedor
           Front-End.
         </p>
-        <div id="redes"></div>
+        <div id="redes">
           <h3>Acesse minhas redes:</h3>
           <a href="https://github.com/bdancost" target="_blank">
             <p><i class="bx bxl-github"></i>GitHub</p>
@@ -54,8 +54,10 @@
         </div>
       </div>
 
-      <div class="circulo"></div>
-      <div><img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" /></div>
+      <div class="img-home">
+        <div class="circulo"></div>
+        <img src="./assets/image_foto_me.jpeg" alt="Foto de Daniel" />
+      </div>
     </section>
 
     <div class="line-bottom"></div>
@@ -64,18 +66,18 @@
     <section id="habilidades">
       <div id="home-counts-habilidades">
         <h1>Minhas&nbsp;<span>Habilidades</span></h1>
-        <div class="habilidades-texto">
-          <p>
-            Além das habilidades técnicas, destaco minha capacidade de resolver
-            problemas de maneira criativa e de aprender rapidamente novas
-            tecnologias. Acredito que a combinação de dedicação, curiosidade e foco
-            nos detalhes me permite entregar soluções inovadoras e funcionais.
-          </p>
-          <p>Meu objetivo é crescer como profissional e contribuir para o
-            desenvolvimento de sistemas que sejam não apenas eficientes, mas também
-            significativos.
-          </p>
-        </div>
+        <p>
+          Além das habilidades técnicas, destaco minha capacidade de resolver
+          problemas de maneira criativa e de aprender rapidamente novas
+          tecnologias. Acredito que a combinação de dedicação, curiosidade e
+          foco nos detalhes me permite entregar soluções inovadoras e
+          funcionais.
+        </p>
+        <p>
+          Meu objetivo é crescer como profissional e contribuir para o
+          desenvolvimento de sistemas que sejam não apenas eficientes, mas
+          também significativos.
+        </p>
         <div class="certificados">
           <a id="certificados-btn" href="./certificados.html" target="_blank">
             <i class="bx bx-medal"></i>Certificados
@@ -83,9 +85,9 @@
         </div>
       </div>
 
-      <div class="circulo-habilidades"></div>
-      <div class="img-habilidades">
-        <img class="foto-habilidades" src="./assets/image_02.webp" alt="Imagem do código" />
+      <div class="img-home-habilidades">
+        <div class="circulo-habilidades"></div>
+        <img src="./assets/image_02.webp" alt="Imagem do código" />
       </div>
     </section>
 
@@ -96,47 +98,80 @@
     <section id="projetos">
       <div id="home-projetos">
         <h1>Meus <span>Projetos</span></h1>
-        <p>Nesta seção, apresento projetos desenvolvidos com foco em tecnologias modernas, como JavaScript, TypeScript, React e integração com APIs. Essas experiências me permitiram criar aplicações interativas, escaláveis e voltadas para a experiência do usuário.
-
-          Cada projeto aqui demonstra minha habilidade em desenvolver interfaces dinâmicas, consumir APIs de forma eficiente e aplicar boas práticas de desenvolvimento, como componentes reutilizáveis e escrita de código limpo e estruturado.</p>
+        <p>
+          Nesta seção, apresento projetos desenvolvidos com foco em tecnologias
+          modernas, como JavaScript, TypeScript, React e integração com APIs.
+          Essas experiências me permitiram criar aplicações interativas,
+          escaláveis e voltadas para a experiência do usuário. Cada projeto aqui
+          demonstra minha habilidade em desenvolver interfaces dinâmicas,
+          consumir APIs de forma eficiente e aplicar boas práticas de
+          desenvolvimento, como componentes reutilizáveis e escrita de código
+          limpo e estruturado.
+        </p>
       </div>
       <div class="projetos-lista">
         <div class="projeto">
           <a href="https://spotify-smoky-delta.vercel.app/" target="_blank">
-            <img src="./assets/projeto01.png" alt="Projeto Spotify">
+            <img src="./assets/projeto01.png" alt="Projeto Spotify" />
             <h2>🎵 Reprodutor de Música Estilizado</h2>
-            <p> 
-              Um reprodutor de música moderno, interativo e funcional inspirado na interface do Spotify. Este projeto foi desenvolvido com HTML, CSS e JavaScript, utilizando Bootstrap Icons para melhorar a experiência visual.</p>
+            <p>
+              Um reprodutor de música moderno, interativo e funcional inspirado
+              na interface do Spotify. Este projeto foi desenvolvido com HTML,
+              CSS e JavaScript, utilizando Bootstrap Icons para melhorar a
+              experiência visual.
+            </p>
           </a>
           <div class="github-btn">
             <a href="https://github.com/bdancost/spotify" target="_blank">
-              <button class="github-button"><i class="bx bxl-github"></i>Ver projeto no GitHub</button>
+              <button class="github-button">
+                <i class="bx bxl-github"></i>Ver projeto no GitHub
+              </button>
             </a>
           </div>
         </div>
 
         <div class="projeto">
           <a href="https://burguer-dev-xi.vercel.app/" target="_blank">
-            <img src="./assets/projeto02.png" alt="Projeto 2">
+            <img src="./assets/projeto02.png" alt="Projeto 2" />
             <h2>🍔 Dev Burguer</h2>
-            <p>Um site para uma lanchonete fictícia que exibe o menu com imagens, descrições detalhadas dos produtos e preços. Ele também possui a funcionalidade de adicionar itens ao carrinho de compras, com um design simples, mas responsivo, utilizando Tailwind CSS para o layout, e várias funcionalidades interativas baseadas em JavaScript.</p>
+            <p>
+              Um site para uma lanchonete fictícia que exibe o menu com imagens,
+              descrições detalhadas dos produtos e preços. Ele também possui a
+              funcionalidade de adicionar itens ao carrinho de compras, com um
+              design simples, mas responsivo, utilizando Tailwind CSS para o
+              layout, e várias funcionalidades interativas baseadas em
+              JavaScript.
+            </p>
           </a>
           <div class="github-btn">
             <a href="https://github.com/bdancost/Burguer-Dev" target="_blank">
-              <button class="github-button"><i class="bx bxl-github"></i>Ver projeto no GitHub</button>
+              <button class="github-button">
+                <i class="bx bxl-github"></i>Ver projeto no GitHub
+              </button>
             </a>
           </div>
         </div>
 
         <div class="projeto">
           <a href="https://open-weather-api-seven.vercel.app/" target="_blank">
-            <img src="./assets/projeto03.png" alt="Projeto 3">
+            <img src="./assets/projeto03.png" alt="Projeto 3" />
             <h2>🌤️ Clima Agora</h2>
-            <p>Este é um aplicativo simples de previsão do tempo que permite verificar as condições climáticas de qualquer cidade, com base em dados fornecidos pela API do OpenWeather. O projeto exibe temperatura, umidade, velocidade do vento e atualiza o fundo com uma imagem da cidade consultada.</p>
+            <p>
+              Este é um aplicativo simples de previsão do tempo que permite
+              verificar as condições climáticas de qualquer cidade, com base em
+              dados fornecidos pela API do OpenWeather. O projeto exibe
+              temperatura, umidade, velocidade do vento e atualiza o fundo com
+              uma imagem da cidade consultada.
+            </p>
           </a>
           <div class="github-btn">
-            <a href="https://github.com/bdancost/OpenWeather_API" target="_blank">
-              <button class="github-button"><i class="bx bxl-github"></i>Ver projeto no GitHub</button>
+            <a
+              href="https://github.com/bdancost/OpenWeather_API"
+              target="_blank"
+            >
+              <button class="github-button">
+                <i class="bx bxl-github"></i>Ver projeto no GitHub
+              </button>
             </a>
           </div>
         </div>
@@ -146,7 +181,7 @@
     <div class="line-bottom"></div>
 
     <footer>
-      <img src="./assets/Logo_Alura_Include.svg" alt="Logo Alura Include">
+      <img src="./assets/Logo_Alura_Include.svg" alt="Logo Alura Include" />
       <p>Desenvolvido por Daniel Fernandes</p>
     </footer>
     <script src="./src/main.js"></script>
