@@ -16,6 +16,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -126,6 +128,8 @@ nav a i {
 .certificados {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -166,4 +170,32 @@ nav a i {
 
 .link-certificado:hover {
   background: var(--secondary-color);
+}
+
+.line-bottom {
+  width: 90vw;
+  height: 1px;
+  background-color: var(--line-height);
+  margin: 100px auto 30px auto;
+}
+
+footer {
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+footer img {
+  width: 15rem;
+}
+
+footer p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ccc;
 }
