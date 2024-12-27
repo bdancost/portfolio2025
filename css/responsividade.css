@@ -50,6 +50,12 @@
     right: 15px;
   }
 
+  .menu-toggle:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+  }
+
   nav {
     display: none;
     flex-direction: column;
@@ -153,10 +159,6 @@
   .projeto {
     width: 100%; /* Ajusta para ocupar toda a largura da tela */
     min-height: 300px; /* Diminui a altura mínima para telas pequenas */
-  }
-
-  #home-projetos h1 {
-    font-size: 1.8rem; /* Diminui o tamanho do título */
   }
 
   #home-projetos p {
