@@ -58,8 +58,18 @@ header {
   z-index: 1000;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 4rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
 nav {
   display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 nav ul {
@@ -81,6 +91,7 @@ nav a {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
+  transition: color 0.2s ease;
   margin: 0 0 1.5rem 0;
 }
 

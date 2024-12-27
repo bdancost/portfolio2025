@@ -1,0 +1,126 @@
+/* Responsividade para telas menores que 1020px */
+@media (max-width: 1020px) {
+  #home,
+  #habilidades {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home-counts,
+  #home-counts-habilidades {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .img-home,
+  .img-home-habilidades {
+    width: 50%;
+  }
+
+  nav ul {
+    gap: 5rem;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsividade para telas menores que 770px */
+@media (max-width: 770px) {
+  #home,
+  #habilidades {
+    gap: 1.5rem;
+  }
+
+  #home-counts a,
+  .certificados {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  nav.show {
+    display: flex;
+    max-height: 20rem;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  .img-home,
+  .img-home-habilidades {
+    width: 70%;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+  #home p,
+  #habilidades p {
+    font-size: 1.4rem;
+  }
+
+  #home-counts a,
+  .certificados {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .img-home,
+  .img-home-habilidades {
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1.4rem;
+  }
+
+  h1,
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  header {
+    height: 8rem;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+  }
+}
