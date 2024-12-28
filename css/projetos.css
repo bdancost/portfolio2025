@@ -24,10 +24,11 @@ body {
 #projetos {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-between;
   margin: 0 auto;
 }
 

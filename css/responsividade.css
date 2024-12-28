@@ -57,27 +57,30 @@
   }
 
   nav {
-    display: none;
-    flex-direction: column;
     position: absolute;
-    top: 60%;
-    right: 10px;
+    top: 15px;
+    right: -250px;
     background-color: rgba(0, 0, 0, 0.9);
     width: 200px;
     padding: 10px;
-    transition: max-height 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: start;
+    transition: right 1s ease;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     padding: 1rem 0;
   }
 
   nav.show {
-    display: flex;
-    max-height: 20rem;
+    right: 0;
   }
 
   nav a {
@@ -87,6 +90,8 @@
   .img-home,
   .img-home-habilidades {
     width: 70%;
+    order: -1;
+    margin: 0 0 5rem 0;
   }
 
   header {
@@ -120,7 +125,7 @@
 @media (max-width: 480px) {
   #home p,
   #habilidades p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   #home-counts a,
@@ -132,7 +137,7 @@
 
   .img-home,
   .img-home-habilidades {
-    width: 100%;
+    width: 70%;
   }
 
   nav ul {
@@ -149,7 +154,7 @@
   }
 
   header {
-    height: 8rem;
+    height: 6rem;
   }
 
   footer p {
@@ -157,11 +162,11 @@
   }
 
   .projeto {
-    width: 100%; /* Ajusta para ocupar toda a largura da tela */
+    width: 90%; /* Ajusta para ocupar toda a largura da tela */
     min-height: 300px; /* Diminui a altura mínima para telas pequenas */
   }
 
   #home-projetos p {
-    font-size: 1.4rem; /* Diminui o tamanho do texto */
+    font-size: 1.6rem; /* Diminui o tamanho do texto */
   }
 }

@@ -115,8 +115,25 @@ h1 {
   margin: 0 0 1.5rem 0;
 }
 
-span {
+.texto-colorido {
   color: var(--primary-color);
+}
+
+#nome-autor::after {
+  content: "|";
+  animation: piscar 0.65s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 h3 {
