@@ -213,6 +213,7 @@ p {
   background-color: var(--primary-color);
   transition: background-color 0.2s ease;
   color: var(--color-fonts);
+  transform: scale(1.1);
 }
 
 #home-counts a:hover i,
