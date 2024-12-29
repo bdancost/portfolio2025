@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let tituloElemento = document.querySelector(".titulo-principal");
   let paragrafoElemento = document.querySelector(".descricao-autor");
 
-  let atraso = 150;
+  let atraso = 100;
   let atrasoParagrafo = 30;
 
   let contadorDeLetras = 0;
