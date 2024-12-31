@@ -48,7 +48,7 @@ export const projetos = [
     descricao:
       "Uma aplicação que permite buscar informações sobre filmes usando a API do OMDB, adicionar filmes favoritos a uma lista e armazenar essas informações localmente usando o localStorage.",
     link: "https://my-movies-self.vercel.app/",
-    imagem: "./assets/Projeto05.png",
+    imagem: "/assets/Projeto05.png",
     github: "https://github.com/bdancost/My_Movies",
   },
   {
@@ -57,7 +57,7 @@ export const projetos = [
     descricao:
       "Um site para uma lanchonete fictícia que exibe o menu com imagens, descrições detalhadas dos produtos e preços. Possui funcionalidade de adicionar itens ao carrinho de compras.",
     link: "https://burguer-dev-xi.vercel.app/",
-    imagem: "./assets/projeto02.png",
+    imagem: "/assets/projeto02.png",
     github: "https://github.com/bdancost/Burguer-Dev",
   },
   {
@@ -66,7 +66,7 @@ export const projetos = [
     descricao:
       "Aplicativo de previsão do tempo que permite verificar as condições climáticas de qualquer cidade, com dados da API OpenWeather.",
     link: "https://open-weather-api-seven.vercel.app/",
-    imagem: "./assets/projeto03.png",
+    imagem: "/assets/projeto03.png",
     github: "https://github.com/bdancost/OpenWeather_API",
   },
 ];
