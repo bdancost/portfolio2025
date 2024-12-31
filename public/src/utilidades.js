@@ -44,7 +44,7 @@ export const cursos = [
 export const projetos = [
   {
     id: 1,
-    nome: "Lista de Filmes com OMDB API",
+    nome: "🎥 Lista de Filmes com OMDB API",
     descricao:
       "Uma aplicação que permite buscar informações sobre filmes usando a API do OMDB, adicionar filmes favoritos a uma lista e armazenar essas informações localmente usando o localStorage.",
     link: "https://my-movies-self.vercel.app/",
@@ -53,7 +53,7 @@ export const projetos = [
   },
   {
     id: 2,
-    nome: "Dev Burguer",
+    nome: "🍔 Dev Burguer",
     descricao:
       "Um site para uma lanchonete fictícia que exibe o menu com imagens, descrições detalhadas dos produtos e preços. Possui funcionalidade de adicionar itens ao carrinho de compras.",
     link: "https://burguer-dev-xi.vercel.app/",
@@ -62,7 +62,7 @@ export const projetos = [
   },
   {
     id: 3,
-    nome: "Clima Agora",
+    nome: "🌤️ Clima Agora",
     descricao:
       "Aplicativo de previsão do tempo que permite verificar as condições climáticas de qualquer cidade, com dados da API OpenWeather.",
     link: "https://open-weather-api-seven.vercel.app/",
