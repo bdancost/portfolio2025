@@ -233,4 +233,9 @@ footer p {
   nav a:hover {
     padding: 0.3rem 0.6rem;
   }
+
+  .container {
+    width: 100%;
+    gap: 1.5rem;
+  }
 }
