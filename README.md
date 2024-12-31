@@ -74,10 +74,5 @@ Contribuições são bem-vindas! Se você tiver sugestões ou encontrar algum pr
 
 ---
 
-🔗 **Entre em contato**:
-
-- 📧 Email: [pr.danfc88@gmail.com](mailto:pr.danfc88@gmail.com)
-- 🌐 LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/daniel-fernandes1988/)
-
 
 ````
