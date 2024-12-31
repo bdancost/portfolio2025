@@ -78,4 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 //Scroll na página
