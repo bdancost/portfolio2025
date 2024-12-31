@@ -1,4 +1,4 @@
-# 🌟 **Portfólio Pessoal de [Seu Nome]** 🚀
+# 🌟 **Portfólio Pessoal de Daniel Fernandes** 🚀
 
 **Bem-vindo ao meu portfólio pessoal!** Este projeto foi desenvolvido para exibir minhas habilidades, projetos e experiências de forma criativa e interativa. Aqui, você encontrará uma visão geral do meu trabalho, as tecnologias que domino e como entrar em contato comigo.
 
