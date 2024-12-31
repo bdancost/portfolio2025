@@ -1,6 +1,3 @@
-Aqui está uma versão aprimorada do seu README, com uma linguagem mais profissional, fontes maiores e elementos de animação no estilo Markdown para torná-lo mais atrativo:
-
-````markdown
 # 🌟 **Portfólio Pessoal de [Seu Nome]** 🚀
 
 **Bem-vindo ao meu portfólio pessoal!** Este projeto foi desenvolvido para exibir minhas habilidades, projetos e experiências de forma criativa e interativa. Aqui, você encontrará uma visão geral do meu trabalho, as tecnologias que domino e como entrar em contato comigo.
@@ -48,6 +45,7 @@ Siga os passos abaixo para rodar o projeto em seu ambiente local:
 ```bash
 git clone https://github.com/bdancost/portfolio2025.git
 ```
+
 ````
 
 ### 2. **Instale as dependências**
@@ -81,8 +79,5 @@ Contribuições são bem-vindas! Se você tiver sugestões ou encontrar algum pr
 - 📧 Email: [pr.danfc88@gmail.com](mailto:pr.danfc88@gmail.com)
 - 🌐 LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/daniel-fernandes1988/)
 
-```
 
-
-
-```
+````
