@@ -202,35 +202,35 @@ footer p {
 
 @media (max-width: 770px) {
   header {
-    height: 8rem; /* Reduz a altura do cabeçalho */
+    height: 8rem;
   }
 
   nav ul {
-    gap: 5rem; /* Reduz o espaço entre os itens do menu */
+    gap: 5rem;
   }
 
   nav a {
-    font-size: 1.8rem; /* Reduz o tamanho da fonte para telas médias */
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
   header {
-    height: 7rem; /* Reduz a altura do cabeçalho ainda mais para dispositivos móveis */
+    height: 7rem;
   }
 
   nav ul {
-    flex-direction: row; /* Coloca os itens do menu em uma coluna */
-    gap: 1.5rem; /* Espaço entre os itens */
+    flex-direction: row;
+    gap: 1.5rem;
     align-items: center;
   }
 
   nav a {
-    font-size: 1.7rem; /* Diminui ainda mais o tamanho da fonte */
-    margin: 0; /* Remove as margens para o alinhamento em coluna */
+    font-size: 1.7rem;
+    margin: 0;
   }
 
   nav a:hover {
-    padding: 0.3rem 0.6rem; /* Ajusta o padding para um layout mais compacto */
+    padding: 0.3rem 0.6rem;
   }
 }
