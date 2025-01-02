@@ -123,6 +123,10 @@
 
 /* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {
+  .fondo {
+    background-repeat: repeat;
+  }
+
   #home p,
   #habilidades p {
     font-size: 1.6rem;
