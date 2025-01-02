@@ -123,27 +123,6 @@
 
 /* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {
-  .fundo {
-    position: relative;
-    background-image: url("/assets/image_fondo02.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    padding-top: 5rem;
-  }
-
-  .fundo::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.8
-    ); /* Torna a sobreposição um pouco mais clara */
-  }
-
   #home p,
   #habilidades p {
     font-size: 1.6rem;
