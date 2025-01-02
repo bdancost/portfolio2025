@@ -123,6 +123,21 @@
 
 /* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {
+  .fundo {
+    background-size: contain; /* Ajusta a imagem de fundo para caber */
+    padding-top: 10rem; /* Reduz o padding para telas menores */
+    background-attachment: scroll; /* Evita problemas com 'fixed' em dispositivos móveis */
+  }
+
+  .fundo::before {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Torna a sobreposição um pouco mais clara */
+  }
+
   #home p,
   #habilidades p {
     font-size: 1.6rem;
