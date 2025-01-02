@@ -124,7 +124,12 @@
 /* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {
   .fondo {
-    background-repeat: repeat;
+    .fundo {
+      background-image: url("/assets/image_fondo02.png");
+      background-repeat: repeat;
+      background-size: 50px 50px; /* Ajusta o tamanho de cada repetição */
+      background-position: center; /* Centraliza o padrão */
+    }
   }
 
   #home p,
