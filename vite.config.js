@@ -1,9 +1,18 @@
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // Configurações do Vite
-  base: "./", // Corrige caminhos relativos no build
+  base: "./",
+  plugins: [],
+  resolve: {
+    /*something*/
+  },
   build: {
-    outDir: "dist", // Diretório de saída
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        certificados: resolve(__dirname, "src/certificados.html"),
+      },
+    }, // Diretório de saída
   },
 });
