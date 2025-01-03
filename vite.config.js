@@ -11,7 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "./index.html"),
-        certificados: resolve(__dirname, "./src/certificados.html"),
+        certificados: resolve(__dirname, "./certificados.html"),
       },
     },
   },
