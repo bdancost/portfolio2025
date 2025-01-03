@@ -10,9 +10,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html"),
-        certificados: resolve(__dirname, "src/certificados.html"),
+        main: resolve(__dirname, "./index.html"),
+        certificados: resolve(__dirname, "./src/certificados.html"),
       },
-    }, // Diretório de saída
+    },
   },
 });
