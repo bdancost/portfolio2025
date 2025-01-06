@@ -44,12 +44,12 @@ export const cursos = [
 export const projetos = [
   {
     id: 1,
-    nome: "🎥 Lista de Filmes com OMDB API",
+    nome: "⚜️ E-Commerce Zara - Loja Online",
     descricao:
-      "Uma aplicação que permite buscar informações sobre filmes usando a API do OMDB, adicionar filmes favoritos a uma lista e armazenar essas informações localmente usando o localStorage.",
-    link: "https://my-movies-self.vercel.app/",
-    imagem: "/assets/Projeto05.png",
-    github: "https://github.com/bdancost/My_Movies",
+      "Este projeto simula um sistema de e-commerce, com foco na experiência do usuário, ele inclui funcionalidades de carrinho de compras, checkout, e histórico de pedidos, além de filtros de categorias de produtos.",
+    link: "https://bdancost.github.io/e-commerce_zara/",
+    imagem: "/assets/projeto06.png",
+    github: "https://github.com/bdancost/e-commerce_zara",
   },
   {
     id: 2,
