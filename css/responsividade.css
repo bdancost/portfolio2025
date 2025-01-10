@@ -126,7 +126,8 @@
   .fundo {
     background-image: url("/assets/image_fondo02.webp");
     background-repeat: no-repeat;
-    background-position: center; /* Centraliza o padrão */
+    background-position: center;
+    background-size: 100% auto;
   }
 
   #home p,
