@@ -123,13 +123,6 @@
 
 /* Responsividade para telas menores que 480px */
 @media all and (max-width: 480px) {
-  .fundo {
-    background-image: url("/assets/image_fondo02.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
   #home p,
   #habilidades p {
     font-size: 1.6rem;
