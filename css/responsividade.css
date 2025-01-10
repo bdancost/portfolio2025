@@ -127,7 +127,7 @@
     background-image: url("/assets/image_fondo02.webp");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
   }
 
   #home p,
