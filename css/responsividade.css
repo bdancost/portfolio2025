@@ -126,8 +126,6 @@
   .fundo {
     background-image: url("/assets/image_fondo02.webp");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 20vw 20vw; /* Ajusta o tamanho de cada repetição */
     background-position: center; /* Centraliza o padrão */
   }
 
