@@ -1,5 +1,15 @@
 export const cursos = [
   {
+    id: 0,
+    curso: "Javascript Impressionador",
+    estado: "Concluido",
+    data: "16/01/2025",
+    duracao: "146 Horas",
+    descricao:
+      "Concluí um curso completo de JavaScript que abordou desde os fundamentos da linguagem até o desenvolvimento de aplicações completas. Aprendi a manipular dados, variáveis, funções, métodos e estruturas de controle. No front-end, desenvolvi habilidades para trabalhar com o DOM, formulários, localStorage e criei aplicações avançadas utilizando ReactJS, incluindo React Hooks, roteamento, gerenciamento de estado e estilização de componentes. No back-end, aprendi a criar APIs com Node.js e ExpressJS, utilizando middlewares e integrando bancos de dados. O curso foi acompanhado de projetos práticos, como um gerenciador de formulários, uma calculadora de investimentos, um gerenciador de playlists, um front-end de e-commerce com React e uma API funcional completa, consolidando minhas habilidades em desenvolvimento web e criação de soluções eficientes.",
+    url: "https://portalhashtag.com/certificado-hashtag/1737055809674x398014002776841540?data-inicio=Sim",
+  },
+  {
     id: 1,
     curso: "Python Impressionador",
     estado: "Concluido",
