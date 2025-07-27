@@ -379,3 +379,21 @@ footer p {
   text-align: center;
   color: #ccc;
 }
+
+/* Garante que o elemento esteja vazio inicialmente */
+.home__title,
+.home__description {
+  visibility: hidden;
+  min-height: 1.5em; /* Mantém espaço enquanto carrega */
+}
+
+/* Mostra quando o JS estiver pronto */
+.js-loaded .home__title,
+.js-loaded .home__description {
+  visibility: visible;
+}
+
+/* Estilo para o texto colorido */
+.texto-colorido {
+  color: #4e9af1; /* Azul moderno - ajuste conforme seu tema */
+}
