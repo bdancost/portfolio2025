@@ -2,29 +2,28 @@
 export class TypeWriter {
   constructor(element, texts, options = {}) {
     this.element = element;
-    this.texts = texts; // Array de objetos { text, colorClass }
+    this.texts = Array.isArray(texts) ? texts : [texts];
     this.delay = options.delay || 100;
-    this.wordDelay = options.wordDelay || this.delay;
-    this.charIndex = 0;
-    this.wordIndex = 0;
+    this.onComplete = options.onComplete || null;
+    this.currentTextIndex = 0;
+    this.currentCharIndex = 0;
     this.isWriting = false;
-    this.onComplete = null;
   }
 
   start() {
-    if (this.isWriting) return;
+    if (this.isWriting || !this.element) return;
 
     this.isWriting = true;
-    this.element.innerHTML = ""; // Limpa o conteúdo
-    this.typeWord();
+    this.element.textContent = "";
+    this.type();
   }
 
-  typeWord() {
-    if (this.wordIndex < this.texts.length) {
-      const current = this.texts[this.wordIndex];
+  type() {
+    if (this.currentTextIndex < this.texts.length) {
+      const current = this.texts[this.currentTextIndex];
 
-      if (this.charIndex < current.text.length) {
-        const char = current.text.charAt(this.charIndex);
+      if (this.currentCharIndex < current.text.length) {
+        const char = current.text[this.currentCharIndex];
 
         if (current.colorClass) {
           this.element.innerHTML += `<span class="${current.colorClass}">${char}</span>`;
@@ -32,26 +31,24 @@ export class TypeWriter {
           this.element.textContent += char;
         }
 
-        this.charIndex++;
-        setTimeout(() => this.typeWord(), this.delay);
+        this.currentCharIndex++;
+        setTimeout(() => this.type(), this.delay);
       } else {
-        this.nextWord();
+        this.nextText();
       }
     } else {
       this.finish();
     }
   }
 
-  nextWord() {
-    this.wordIndex++;
-    this.charIndex = 0;
-    setTimeout(() => this.typeWord(), this.wordDelay);
+  nextText() {
+    this.currentTextIndex++;
+    this.currentCharIndex = 0;
+    setTimeout(() => this.type(), this.delay);
   }
 
   finish() {
     this.isWriting = false;
-    if (this.onComplete) {
-      this.onComplete();
-    }
+    if (this.onComplete) this.onComplete();
   }
 }

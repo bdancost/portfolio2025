@@ -3,56 +3,83 @@ import { TypeWriter } from "./modules/typeWriter.js";
 import { SmoothScroll } from "./modules/smoothScroll.js";
 import { MenuToggle } from "./modules/menuToggle.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Animação de Digitação
-  const titleWriter = new TypeWriter(
-    document.querySelector(".home__title"),
-    [
-      { text: "Daniel ", colorClass: null },
-      { text: "Fernandes", colorClass: "texto-colorido" },
-    ],
-    { delay: 100 }
-  );
+class Portfolio {
+  constructor() {
+    this.init();
+  }
 
-  const descWriter = new TypeWriter(
-    document.querySelector(".home__description"),
-    [
-      {
-        text: "Olá, sou Daniel, estudante do 5º semestre de Análise e Desenvolvimento de Sistemas (ADS) tenho 36 anos. Tenho conhecimento prático com HTML, CSS, Javascript, Tailwind, TypeScript, React, Python e SQL, e estou em constante aprendizado para me aperfeiçoar como desenvolvedor Front-End.",
-        colorClass: null,
-      },
-    ],
-    { delay: 30 }
-  );
+  init() {
+    this.initTypeWriter();
+    this.initSmoothScroll();
+    this.initMenuToggle();
+  }
 
-  // Inicia automaticamente ao carregar a página
-  titleWriter.start();
-  titleWriter.onComplete = () => descWriter.start();
+  initTypeWriter() {
+    // Use tanto a classe quanto o ID como fallback
+    const titleElement = document.querySelector(
+      ".titulo-principal, #nome-autor"
+    );
+    const descElement = document.querySelector(".descricao-autor, #descricao");
 
-  // 2. Navegação Suave
-  new SmoothScroll('a[href^="#"]', 100);
-
-  // 3. Menu Mobile
-  new MenuToggle("menu-toggle", "menu");
-
-  // Ativar observador de elementos
-  initIntersectionObserver();
-});
-
-function initIntersectionObserver() {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
+    if (!titleElement || !descElement) {
+      console.error("Elementos não encontrados:", {
+        title: titleElement,
+        description: descElement,
       });
-    },
-    { threshold: 0.1 }
-  );
+      return;
+    }
 
-  document.querySelectorAll(".section").forEach((section) => {
-    observer.observe(section);
-  });
+    console.log("Elementos encontrados para TypeWriter:", {
+      title: titleElement,
+      description: descElement,
+    });
+
+    const titleWriter = new TypeWriter(
+      titleElement,
+      [
+        { text: "Daniel ", colorClass: null },
+        { text: "Fernandes", colorClass: "texto-colorido" },
+      ],
+      {
+        delay: 100,
+        onComplete: () => {
+          new TypeWriter(
+            descElement,
+            [
+              {
+                text: "Olá, sou Daniel, estudante do 5º semestre de Análise e Desenvolvimento de Sistemas (ADS) tenho 36 anos. Tenho conhecimento prático com HTML, CSS, Javascript, Tailwind, TypeScript, React, Python e SQL, e estou em constante aprendizado para me aperfeiçoar como desenvolvedor Front-End.",
+                colorClass: null,
+              },
+            ],
+            { delay: 30 }
+          ).start();
+        },
+      }
+    );
+
+    titleWriter.start();
+  }
+
+  initSmoothScroll() {
+    new SmoothScroll('a[href^="#"]', 100);
+  }
+
+  initMenuToggle() {
+    new MenuToggle("menu-toggle", "menu");
+  }
+}
+
+// Inicialização segura
+function initApp() {
+  try {
+    new Portfolio();
+  } catch (error) {
+    console.error("Falha ao inicializar portfolio:", error);
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  initApp();
 }
