@@ -1,82 +1,244 @@
+/**
+ * Lista de cursos concluídos com informações detalhadas
+ * @type {Array<{
+ *   id: number,
+ *   curso: string,
+ *   instituicao: string,
+ *   estado: string,
+ *   dataConclusao: string,
+ *   duracaoHoras: number,
+ *   duracaoTexto: string,
+ *   descricao: string,
+ *   urlCertificado: string,
+ *   competencias: string[]
+ * }>}
+ */
 export const cursos = [
   {
     id: 0,
-    curso: "Javascript Impressionador",
-    estado: "Concluido",
-    data: "16/01/2025",
-    duracao: "146 Horas",
-    descricao:
-      "Concluí um curso completo de JavaScript que abordou desde os fundamentos da linguagem até o desenvolvimento de aplicações completas. Aprendi a manipular dados, variáveis, funções, métodos e estruturas de controle. No front-end, desenvolvi habilidades para trabalhar com o DOM, formulários, localStorage e criei aplicações avançadas utilizando ReactJS, incluindo React Hooks, roteamento, gerenciamento de estado e estilização de componentes. No back-end, aprendi a criar APIs com Node.js e ExpressJS, utilizando middlewares e integrando bancos de dados. O curso foi acompanhado de projetos práticos, como um gerenciador de formulários, uma calculadora de investimentos, um gerenciador de playlists, um front-end de e-commerce com React e uma API funcional completa, consolidando minhas habilidades em desenvolvimento web e criação de soluções eficientes.",
-    url: "https://portalhashtag.com/certificado-hashtag/1737055809674x398014002776841540?data-inicio=Sim",
+    curso: "JavaScript Impressionador",
+    instituicao: "Hashtag Treinamentos",
+    estado: "Concluído",
+    dataConclusao: "2025-01-16",
+    duracaoHoras: 146,
+    duracaoTexto: "146 horas",
+    descricao: `
+      Curso completo de JavaScript abordando desde fundamentos até aplicações completas.
+      Principais competências adquiridas:
+      - Manipulação de dados, variáveis, funções e estruturas de controle
+      - Front-end: DOM, formulários, localStorage
+      - ReactJS: Hooks, roteamento, gerenciamento de estado
+      - Back-end: APIs com Node.js e ExpressJS, middlewares, bancos de dados
+      Projetos desenvolvidos:
+      • Gerenciador de formulários
+      • Calculadora de investimentos
+      • Gerenciador de playlists
+      • Front-end de e-commerce com React
+      • API funcional completa
+    `,
+    urlCertificado:
+      "https://portalhashtag.com/certificado-hashtag/1737055809674x398014002776841540",
+    competencias: [
+      "JavaScript ES6+",
+      "React",
+      "Node.js",
+      "Express",
+      "Gestão de estado",
+      "Manipulação de DOM",
+    ],
   },
   {
     id: 1,
     curso: "Python Impressionador",
-    estado: "Concluido",
-    data: "04/12/2024",
-    duracao: "124 Horas",
-    descricao:
-      "Principais ferramentas e conteúdos estudados: Python básico e intermediário: Variáveis, condições (if), loops (for, while), strings, listas, tuplas, dicionários e funções. Manipulação de dados: NumPy, Pandas, integração com Excel, e automação de leitura de arquivos TXT e PDF. Visualização de dados: Matplotlib, Seaborn e Dashboards com Streamlit e Dash. Automação: Selenium, BeautifulSoup (Web Scraping), RPA (Automação de Processos) e Regex.  Projetos práticos: Automações para mercado de trabalho, desenvolvimento web (Flask e Django), interface gráfica (Tkinter).",
-    url: "https://portalhashtag.com/certificado-hashtag/1733353920752x874769355660591100?data-inicio=Sim",
+    instituicao: "Hashtag Treinamentos",
+    estado: "Concluído",
+    dataConclusao: "2024-12-04",
+    duracaoHoras: 124,
+    duracaoTexto: "124 horas",
+    descricao: `
+      Curso abrangente de Python com aplicações práticas em diversas áreas.
+      Conteúdo estudado:
+      - Fundamentos: variáveis, condições, loops, estruturas de dados
+      - Manipulação de dados: NumPy, Pandas, integração com Excel
+      - Automação: Selenium, BeautifulSoup, RPA, Regex
+      - Desenvolvimento web: Flask e Django
+      - Interface gráfica: Tkinter
+      Projetos desenvolvidos:
+      • Automações para mercado de trabalho
+      • Aplicações web com Flask/Django
+      • Soluções com interface gráfica
+    `,
+    urlCertificado:
+      "https://portalhashtag.com/certificado-hashtag/1733353920752x874769355660591100",
+    competencias: [
+      "Python",
+      "Pandas",
+      "Web Scraping",
+      "Flask",
+      "Django",
+      "Automação",
+    ],
   },
   {
     id: 2,
-    curso: "SQL Impresionador",
-    estado: "Concluido",
-    data: "22/07/2024",
-    duracao: "90 Horas",
-    descricao:
-      "Neste curso, adquiri habilidades avançadas em SQL Server, MySQL, PostgreSQL e Oracle. Aprendi a realizar consultas complexas, funções de agregação, joins, manipulação de strings e datas, subqueries, CTEs, triggers, transações e integrações com ferramentas como Excel, Power BI e Python. Além disso, estudei a modelagem e desenvolvimento de bancos de dados, incluindo modelos conceitual, lógico e físico, e técnicas de normalização.",
-    url: "https://portalhashtag.com/certificado-hashtag/1721678269654x519470694891257860?data-inicio=Sim",
+    curso: "SQL Impressionador",
+    instituicao: "Hashtag Treinamentos",
+    estado: "Concluído",
+    dataConclusao: "2024-07-22",
+    duracaoHoras: 90,
+    duracaoTexto: "90 horas",
+    descricao: `
+      Curso avançado de banco de dados cobrindo múltiplos sistemas.
+      Habilidades adquiridas:
+      - Consultas complexas em SQL Server, MySQL, PostgreSQL e Oracle
+      - Funções de agregação, joins, manipulação de strings e datas
+      - Subqueries, CTEs, triggers e transações
+      - Integração com Excel, Power BI e Python
+      - Modelagem de bancos de dados (conceitual, lógico e físico)
+      - Técnicas de normalização
+    `,
+    urlCertificado:
+      "https://portalhashtag.com/certificado-hashtag/1721678269654x519470694891257860",
+    competencias: [
+      "SQL",
+      "Modelagem de dados",
+      "MySQL",
+      "PostgreSQL",
+      "Otimização de queries",
+    ],
   },
   {
     id: 3,
-    curso: "Power BI Impresionador",
-    estado: "Concluido",
-    data: "14/06/2024",
-    duracao: "118 Horas",
-    descricao:
-      "Neste curso, adquiri habilidades avançadas em Power BI, incluindo importação e tratamento de bases de dados com Power Query, criação e gerenciamento de relacionamentos, e funções DAX para análise de dados. Aprendi técnicas de storytelling e visualização de dados, desenvolvimento de dashboards no PowerPoint, e integração do Power BI com bancos de dados SQL. O curso também cobriu tópicos avançados como DAX Avançado, Power BI Online.",
-    url: "https://portalhashtag.com/certificado-hashtag/1718382494977x175981244020949000?data-inicio=Sim",
+    curso: "Power BI Impressionador",
+    instituicao: "Hashtag Treinamentos",
+    estado: "Concluído",
+    dataConclusao: "2024-06-14",
+    duracaoHoras: 118,
+    duracaoTexto: "118 horas",
+    descricao: `
+      Curso completo de análise e visualização de dados com Power BI.
+      Conteúdo abordado:
+      - Importação e tratamento de dados com Power Query
+      - Criação e gerenciamento de relacionamentos
+      - Funções DAX para análise de dados
+      - Storytelling e visualização de dados
+      - Desenvolvimento de dashboards no PowerPoint
+      - Integração com bancos de dados SQL
+      - Tópicos avançados: DAX Avançado, Power BI Online
+    `,
+    urlCertificado:
+      "https://portalhashtag.com/certificado-hashtag/1718382494977x175981244020949000",
+    competencias: [
+      "Power BI",
+      "DAX",
+      "Power Query",
+      "Visualização de dados",
+      "Business Intelligence",
+    ],
   },
   {
     id: 4,
     curso: "Alura Include - HTML, CSS, JavaScript e Python",
-    estado: "Concluido",
-    data: "03/12/2024",
-    duracao: "44 Horas",
-    descricao:
-      "Concluí uma formação abrangente em programação, cobrindo lógica de programação com JavaScript, uso de Git e GitHub, e práticas de desafios. Aprofundei meus conhecimentos em Python, criando aplicações e aplicando conceitos de orientação a objetos. No front-end, adquiri habilidades em HTML, CSS e JavaScript para criar páginas web dinâmicas e responsivas.",
-    url: "https://cursos.alura.com.br/user/pr-danfc88/fullCertificate/9a9dcd89e5102285e03b9b281feea1d8",
+    instituicao: "Alura",
+    estado: "Concluído",
+    dataConclusao: "2024-12-03",
+    duracaoHoras: 44,
+    duracaoTexto: "44 horas",
+    descricao: `
+      Formação abrangente em programação com foco em fundamentos.
+      Conteúdo estudado:
+      - Lógica de programação com JavaScript
+      - Versionamento com Git e GitHub
+      - Python: aplicações e orientação a objetos
+      - Front-end: HTML, CSS e JavaScript
+      - Desenvolvimento de páginas web dinâmicas e responsivas
+    `,
+    urlCertificado:
+      "https://cursos.alura.com.br/user/pr-danfc88/fullCertificate/9a9dcd89e5102285e03b9b281feea1d8",
+    competencias: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Python",
+      "Git",
+      "Responsividade",
+    ],
   },
 ];
 
+/**
+ * Lista de projetos desenvolvidos com informações técnicas
+ * @type {Array<{
+ *   id: number,
+ *   nome: string,
+ *   emoji: string,
+ *   descricao: string,
+ *   funcionalidades: string[],
+ *   linkDemo: string,
+ *   imagem: string,
+ *   github: string,
+ *   tecnologias: string[],
+ *   dataCriacao: string
+ * }>}
+ */
 export const projetos = [
   {
     id: 1,
-    nome: "⚜️ E-Commerce Zara - Loja Online",
+    nome: "E-Commerce Zara - Loja Online",
+    emoji: "⚜️",
     descricao:
-      "Este projeto simula um sistema de e-commerce, com foco na experiência do usuário, ele inclui funcionalidades de carrinho de compras, checkout, e histórico de pedidos, além de filtros de categorias de produtos.",
-    link: "https://bdancost.github.io/e-commerce_zara/",
+      "Simulação de sistema e-commerce com foco na experiência do usuário.",
+    funcionalidades: [
+      "Carrinho de compras interativo",
+      "Processo de checkout completo",
+      "Histórico de pedidos",
+      "Filtros por categorias de produtos",
+      "Design responsivo",
+    ],
+    linkDemo: "https://bdancost.github.io/e-commerce_zara/",
     imagem: "/assets/projeto06.png",
     github: "https://github.com/bdancost/e-commerce_zara",
+    tecnologias: [
+      "React",
+      "Context API",
+      "Styled Components",
+      "React Router",
+      "LocalStorage",
+    ],
+    dataCriacao: "2024-05-15",
   },
   {
     id: 2,
-    nome: "🍔 Dev Burguer",
-    descricao:
-      "Um site para uma lanchonete fictícia que exibe o menu com imagens, descrições detalhadas dos produtos e preços. Possui funcionalidade de adicionar itens ao carrinho de compras.",
-    link: "https://burguer-dev-xi.vercel.app/",
+    nome: "Dev Burguer",
+    emoji: "🍔",
+    descricao: "Site para lanchonete fictícia com menu interativo.",
+    funcionalidades: [
+      "Exibição de menu com imagens e descrições",
+      "Sistema de carrinho de compras",
+      "Cálculo automático de total",
+      "Interface amigável e intuitiva",
+    ],
+    linkDemo: "https://burguer-dev-xi.vercel.app/",
     imagem: "/assets/projeto02.png",
     github: "https://github.com/bdancost/Burguer-Dev",
+    tecnologias: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    dataCriacao: "2024-03-10",
   },
   {
     id: 3,
-    nome: "🌤️ Clima Agora",
-    descricao:
-      "Aplicativo de previsão do tempo que permite verificar as condições climáticas de qualquer cidade, com dados da API OpenWeather.",
-    link: "https://open-weather-api-seven.vercel.app/",
+    nome: "Clima Agora",
+    emoji: "🌤️",
+    descricao: "Aplicativo de previsão do tempo com dados em tempo real.",
+    funcionalidades: [
+      "Busca por cidade",
+      "Exibição de condições atuais",
+      "Previsão para próximos dias",
+      "Ícones ilustrativos para condições climáticas",
+    ],
+    linkDemo: "https://open-weather-api-seven.vercel.app/",
     imagem: "/assets/projeto03.png",
     github: "https://github.com/bdancost/OpenWeather_API",
+    tecnologias: ["React", "API Fetch", "OpenWeather API", "CSS Modules"],
+    dataCriacao: "2024-04-22",
   },
 ];

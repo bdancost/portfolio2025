@@ -1,32 +1,45 @@
 import { projetos } from "./utilidades.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const projetosSection = document.querySelector("#projetos .projetos-lista");
+/**
+ * Gera e renderiza os projetos na seção designada
+ * @param {HTMLElement} container - Elemento DOM onde os projetos serão renderizados
+ * @param {Array} projetosList - Lista de projetos a serem exibidos
+ */
+const renderizarProjetos = (container, projetosList) => {
+  if (!container || !projetosList?.length) return;
 
-  const gerarProjetos = () => {
-    const projetosHTML = projetos
-      .map((projeto) => {
-        return `
-      <div class="projeto">
-        <a href="${projeto.link}" target="_blank">
-          <img src="${projeto.imagem}" alt="${projeto.nome}" />
-          <h2>${projeto.nome}</h2>
-          <p>${projeto.descricao}</p>
-        </a>
-        <div class="github-btn">
-          <a href="${projeto.github}" target="_blank">
-            <button class="github-button">
-              <i class="bx bxl-github"></i> Ver projeto no GitHub
-            </button>
+  const projetosHTML = projetosList
+    .map((projeto) => {
+      const { link, imagem, nome, descricao, github } = projeto;
+
+      return `
+        <div class="projeto">
+          <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="${imagem}" 
+              alt="${nome}" 
+              loading="lazy"
+            />
+            <h2>${nome}</h2>
+            <p>${descricao}</p>
           </a>
+          <div class="github-btn">
+            <a href="${github}" target="_blank" rel="noopener noreferrer">
+              <button type="button" class="github-button" aria-label="Ver projeto ${nome} no GitHub">
+                <i class="bx bxl-github"></i> Ver projeto no GitHub
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-    `;
-      })
-      .join(""); // Unindo todos os projetos em uma string
+      `;
+    })
+    .join("");
 
-    projetosSection.innerHTML = projetosHTML; // Injetando o HTML gerado na seção de projetos
-  };
+  container.innerHTML = projetosHTML;
+};
 
-  gerarProjetos(); // Chama a função para gerar os projetos
+// Inicialização quando o DOM estiver pronto
+document.addEventListener("DOMContentLoaded", () => {
+  const projetosContainer = document.querySelector("#projetos .projetos-lista");
+  renderizarProjetos(projetosContainer, projetos);
 });
