@@ -10,23 +10,31 @@ const renderizarProjetos = (container, projetosList) => {
 
   const projetosHTML = projetosList
     .map((projeto) => {
-      const { link, imagem, nome, descricao, github } = projeto;
+      const { linkDemo, imagem, nome, descricao, github, emoji, tecnologias } =
+        projeto;
+
+      // Criar lista de tecnologias
+      const tecnologiasHTML = tecnologias
+        .map((tech) => `<span class="tech-tag">${tech}</span>`)
+        .join("");
 
       return `
         <div class="projeto">
-          <a href="${link}" target="_blank" rel="noopener noreferrer">
+          <a href="${linkDemo}" target="_blank" rel="noopener noreferrer">
+          <h2>${emoji} ${nome}</h2>
             <img 
               src="${imagem}" 
               alt="${nome}" 
               loading="lazy"
             />
-            <h2>${nome}</h2>
+            
             <p>${descricao}</p>
+            <div class="tecnologias">${tecnologias}</div>
           </a>
           <div class="github-btn">
             <a href="${github}" target="_blank" rel="noopener noreferrer">
               <button type="button" class="github-button" aria-label="Ver projeto ${nome} no GitHub">
-                <i class="bx bxl-github"></i> Ver projeto no GitHub
+                <i class="bx bxl-github"></i> Ver código no GitHub
               </button>
             </a>
           </div>

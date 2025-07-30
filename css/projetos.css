@@ -136,3 +136,18 @@ body {
   color: var(--color-fonts);
   transform: scale(1.1);
 }
+
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  color: white;
+  gap: 0.5rem;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
