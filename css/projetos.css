@@ -93,9 +93,8 @@ body {
 }
 
 .projeto p {
-  padding: 0 10px 10px;
-  color: var(--color-fonts);
-  font-size: 1.7rem;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
 }
 
 .projeto:hover {

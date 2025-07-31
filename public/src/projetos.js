@@ -10,8 +10,16 @@ const renderizarProjetos = (container, projetosList) => {
 
   const projetosHTML = projetosList
     .map((projeto) => {
-      const { linkDemo, imagem, nome, descricao, github, emoji, tecnologias } =
-        projeto;
+      const {
+        linkDemo,
+        imagem,
+        nome,
+        descricao,
+        funcionalidades,
+        github,
+        emoji,
+        tecnologias,
+      } = projeto;
 
       // Criar lista de tecnologias
       const tecnologiasHTML = tecnologias
@@ -29,6 +37,7 @@ const renderizarProjetos = (container, projetosList) => {
             />
             
             <p>${descricao}</p>
+            <p>${funcionalidades}</p>
             <div class="tecnologias">${tecnologias}</div>
           </a>
           <div class="github-btn">
