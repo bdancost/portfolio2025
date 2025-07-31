@@ -19,7 +19,7 @@ export const cursos = [
     curso: "JavaScript Impressionador",
     instituicao: "Hashtag Treinamentos",
     estado: "Concluído",
-    dataConclusao: "2025-01-16",
+    dataConclusao: "16/01/2025",
     duracaoHoras: 146,
     duracaoTexto: "146 horas",
     descricao: `
@@ -52,7 +52,7 @@ export const cursos = [
     curso: "Python Impressionador",
     instituicao: "Hashtag Treinamentos",
     estado: "Concluído",
-    dataConclusao: "2024-12-04",
+    dataConclusao: "04/12/2024",
     duracaoHoras: 124,
     duracaoTexto: "124 horas",
     descricao: `
@@ -84,7 +84,7 @@ export const cursos = [
     curso: "SQL Impressionador",
     instituicao: "Hashtag Treinamentos",
     estado: "Concluído",
-    dataConclusao: "2024-07-22",
+    dataConclusao: "22/07/2024",
     duracaoHoras: 90,
     duracaoTexto: "90 horas",
     descricao: `
@@ -112,7 +112,7 @@ export const cursos = [
     curso: "Power BI Impressionador",
     instituicao: "Hashtag Treinamentos",
     estado: "Concluído",
-    dataConclusao: "2024-06-14",
+    dataConclusao: "14/06/2024",
     duracaoHoras: 118,
     duracaoTexto: "118 horas",
     descricao: `
@@ -141,7 +141,7 @@ export const cursos = [
     curso: "Alura Include - HTML, CSS, JavaScript e Python",
     instituicao: "Alura",
     estado: "Concluído",
-    dataConclusao: "2024-12-03",
+    dataConclusao: "03/12/2024",
     duracaoHoras: 44,
     duracaoTexto: "44 horas",
     descricao: `
