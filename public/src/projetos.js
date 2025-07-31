@@ -37,7 +37,9 @@ const renderizarProjetos = (container, projetosList) => {
             />
             
             <p>${descricao}</p>
-            <p>${funcionalidades}</p>
+            <ul>
+              <li>${funcionalidades}</li>
+            </ul>
             <div class="tecnologias">${tecnologias}</div>
           </a>
           <div class="github-btn">

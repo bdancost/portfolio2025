@@ -96,6 +96,22 @@ body {
   padding-left: 1.25rem;
   margin: 0.5rem 0;
 }
+.projeto ul li {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  color: rgb(222, 221, 221);
+  text-align: left;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 2.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
 
 .projeto:hover {
   transform: scale(1.05);
