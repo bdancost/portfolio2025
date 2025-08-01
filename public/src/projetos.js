@@ -40,7 +40,11 @@ const renderizarProjetos = (container, projetosList) => {
             <ul>
               <li>${funcionalidades}</li>
             </ul>
-            <div class="tecnologias">${tecnologias}</div>
+            <div class="tecnologias">
+              <ul>
+                <li>${tecnologias}</li>
+              </ul>
+            </div>
           </a>
           <div class="github-btn">
             <a href="${github}" target="_blank" rel="noopener noreferrer">
