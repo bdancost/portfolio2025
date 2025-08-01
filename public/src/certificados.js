@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Data de Conclusão:</strong> ${curso.dataConclusao}</p>
         <p><strong>Duração:</strong> ${curso.duracaoHoras}H</p>
         <p><strong>Descrição:</strong> ${curso.descricao}</p>
-        <a href="${curso.url}" target="_blank" class="link-certificado">Ver Certificado</a>
+        <p><strong>Competências:</strong> ${curso.competencias.join(", ")}</p>
+        <a href="${
+          curso.urlCertificado
+        }" target="_blank" class="link-certificado">Ver Certificado</a>
       </div>
       `;
       })
