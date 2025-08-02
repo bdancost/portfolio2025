@@ -36,13 +36,13 @@ const renderizarProjetos = (container, projetosList) => {
               loading="lazy"
             />
             
-            <p>${descricao}</p>
+            <p><strong>${descricao}</strong></p>
             <ul>
               <li>${funcionalidades}</li>
             </ul>
             <div class="tecnologias">
               <ul>
-                <li>${tecnologias}</li>
+                <li class="tecnologias-lista">${tecnologias}</li>
               </ul>
             </div>
           </a>

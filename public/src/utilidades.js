@@ -201,7 +201,6 @@ export const projetos = [
     tecnologias: [
       "React",
       "<br>Context API",
-      "<br>Styled Components",
       "<br>React Router",
       "<br>LocalStorage",
     ],
