@@ -8,25 +8,24 @@ import { projetos } from "./utilidades.js";
 const renderizarProjetos = (container, projetosList) => {
   if (!container || !projetosList?.length) return;
 
-  const projetosHTML = projetosList
-    .map((projeto) => {
-      const {
-        linkDemo,
-        imagem,
-        nome,
-        descricao,
-        funcionalidades,
-        github,
-        emoji,
-        tecnologias,
-      } = projeto;
+  const projetosHTML = projetosList.map((projeto) => {
+    const {
+      linkDemo,
+      imagem,
+      nome,
+      descricao,
+      funcionalidades,
+      github,
+      emoji,
+      tecnologias,
+    } = projeto;
 
-      // Criar lista de tecnologias
-      const tecnologiasHTML = tecnologias
-        .map((tech) => `<span class="tech-tag">${tech}</span>`)
-        .join("");
+    // Criar lista de tecnologias
+    const tecnologiasHTML = tecnologias
+      .map((tech) => `<span class="tech-tag">${tech}</span>`)
+      .join("");
 
-      return `
+    return `
         <div class="projeto">
           <a href="${linkDemo}" target="_blank" rel="noopener noreferrer">
           <h2>${emoji} ${nome}</h2>
@@ -40,12 +39,14 @@ const renderizarProjetos = (container, projetosList) => {
             <ul>
               <li>${funcionalidades}</li>
             </ul>
-            <div class="tecnologias">
-              <ul>
-                <li class="tecnologias-lista">${tecnologias}</li>
-              </ul>
-            </div>
           </a>
+          <div class="tecnologias-container">
+            <ul class="tecnologias-lista">
+              <li>
+                ${tecnologiasHTML}
+              </li>
+            </ul>  
+          </div>
           <div class="github-btn">
             <a href="${github}" target="_blank" rel="noopener noreferrer">
               <button type="button" class="github-button" aria-label="Ver projeto ${nome} no GitHub">
@@ -55,8 +56,7 @@ const renderizarProjetos = (container, projetosList) => {
           </div>
         </div>
       `;
-    })
-    .join("");
+  });
 
   container.innerHTML = projetosHTML;
 };
