@@ -22,7 +22,7 @@ const renderizarProjetos = (container, projetosList) => {
 
     // Criar lista de tecnologias
     const tecnologiasHTML = tecnologias
-      .map((tech) => `<span class="tech-tag">${tech}</span>`)
+      .map((tech) => `<li><span class="tech-tag">${tech}</span></li>`)
       .join("");
 
     return `
@@ -35,10 +35,12 @@ const renderizarProjetos = (container, projetosList) => {
               loading="lazy"
             />
             
-            <p><strong>${descricao}</strong></p>
-            <ul>
-              <li>${funcionalidades}</li>
-            </ul>
+            <div class="descricao-projeto">
+              <p><strong>${descricao}</strong></p>
+              <ul>
+                <li>${funcionalidades}</li>
+              </ul>
+            </div>
           </a>
           <div class="tecnologias-container">
             <ul class="tecnologias-lista">

@@ -193,7 +193,6 @@ export const projetos = [
       "<br>Processo de checkout completo",
       "<br>Histórico de pedidos",
       "<br>Filtros por categorias de produtos",
-      "<br>Design responsivo",
     ],
     linkDemo: "https://bdancost.github.io/e-commerce_zara/",
     imagem: "/assets/projeto06.png",
