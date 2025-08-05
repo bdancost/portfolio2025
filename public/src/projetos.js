@@ -45,6 +45,7 @@ const renderizarProjetos = (container, projetosList) => {
           <div class="tecnologias-container">
             <ul class="tecnologias-lista">
               <li>
+                <h4>Tecnologias utilizadas:</h4>
                 ${tecnologiasHTML}
               </li>
             </ul>  

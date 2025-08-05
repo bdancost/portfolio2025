@@ -197,12 +197,7 @@ export const projetos = [
     linkDemo: "https://bdancost.github.io/e-commerce_zara/",
     imagem: "/assets/projeto06.png",
     github: "https://github.com/bdancost/e-commerce_zara",
-    tecnologias: [
-      "React",
-      "<br>Context API",
-      "<br>React Router",
-      "<br>LocalStorage",
-    ],
+    tecnologias: ["JavaScript", "<br>HTML", "<br>CSS", "<br>Local Storage"],
     dataCriacao: "2024-05-15",
   },
   {
@@ -221,9 +216,9 @@ export const projetos = [
     github: "https://github.com/bdancost/Burguer-Dev",
     tecnologias: [
       "HTML5",
-      "<br>CSS3",
+      "<br>Tailwind CSS",
       "<br>JavaScript",
-      "<br>Responsive Design",
+      "<br>Toastify JS",
     ],
     dataCriacao: "2024-03-10",
   },
@@ -241,12 +236,7 @@ export const projetos = [
     linkDemo: "https://open-weather-api-seven.vercel.app/",
     imagem: "/assets/projeto03.png",
     github: "https://github.com/bdancost/OpenWeather_API",
-    tecnologias: [
-      "React",
-      "<br>API Fetch",
-      "<br>OpenWeather API",
-      "<br>CSS Modules",
-    ],
+    tecnologias: ["JavaScript", "<br>HTML", "<br>CSS", "<br>OpenWeather API"],
     dataCriacao: "2024-04-22",
   },
 ];
