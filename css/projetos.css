@@ -133,24 +133,28 @@ body {
 
 .tecnologias-container {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
 }
 
 .tech-tag {
   display: inline-block;
-  justify-content: center;
   color: white;
+  padding: 0.1rem 0.6rem; /* Padding mais compacto */
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.4rem; /* Fonte ligeiramente menor */
+  line-height: 0.5; /* Altura de linha reduzida */
+  margin-bottom: 0.1rem; /* Espaçamento mínimo entre tags */
 }
 
 .tecnologias-lista {
   display: flex;
   flex-direction: column;
+  gap: 0.1rem; /* Espaçamento entre as tags */
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .tecnologias-lista li {
