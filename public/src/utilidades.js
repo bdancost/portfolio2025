@@ -39,7 +39,7 @@ export const cursos = [
     urlCertificado:
       "https://portalhashtag.com/certificado-hashtag/1737055809674x398014002776841540",
     competencias: [
-      "JavaScript ES6+",
+      "JavaScript",
       "React",
       "Node.js",
       "Express",

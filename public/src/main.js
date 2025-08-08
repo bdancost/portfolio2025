@@ -47,7 +47,7 @@ class Portfolio {
             descElement,
             [
               {
-                text: "Olá, sou Daniel, estudante do 5º semestre de Análise e Desenvolvimento de Sistemas (ADS) tenho 36 anos. Tenho conhecimento prático com HTML, CSS, Javascript, Tailwind, TypeScript, React, Python e SQL, e estou em constante aprendizado para me aperfeiçoar como desenvolvedor Front-End.",
+                text: "Olá, sou Daniel, Analista de Sistemas formado em Análise e Desenvolvimento de Sistemas. Tenho conhecimento prático em HTML, CSS, JavaScript, Tailwind, TypeScript, React, Python e SQL. Estou em constante evolução, buscando aprimorar minhas habilidades para desenvolver soluções eficientes e inovadoras na área de Front-End.",
                 colorClass: null,
               },
             ],
