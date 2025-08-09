@@ -47,7 +47,7 @@ class Portfolio {
             descElement,
             [
               {
-                text: "Olá, sou Daniel, Analista de Sistemas formado em Análise e Desenvolvimento de Sistemas. Tenho conhecimento prático em HTML, CSS, JavaScript, Tailwind, TypeScript, React, Python e SQL. Estou em constante evolução, buscando aprimorar minhas habilidades para desenvolver soluções eficientes e inovadoras na área de Front-End.",
+                text: "Olá, sou Daniel, Analista de Sistemas formado em Análise e Desenvolvimento de Sistemas. Tenho conhecimento prático em HTML, CSS, JavaScript, Tailwind, TypeScript, React, Node.js, Python e SQL. Estou em constante evolução, buscando aprimorar minhas habilidades para desenvolver soluções eficientes e inovadoras na área de Front-End.",
                 colorClass: null,
               },
             ],
