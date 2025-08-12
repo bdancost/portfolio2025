@@ -21,7 +21,6 @@ export const cursos = [
     estado: "Concluído",
     dataConclusao: "16/01/2025",
     duracaoHoras: 146,
-    duracaoTexto: "146 horas",
     descricao: `
       Curso completo de JavaScript abordando desde fundamentos até aplicações completas.
       Principais competências adquiridas:
@@ -54,7 +53,6 @@ export const cursos = [
     estado: "Concluído",
     dataConclusao: "04/12/2024",
     duracaoHoras: 124,
-    duracaoTexto: "124 horas",
     descricao: `
       Curso abrangente de Python com aplicações práticas em diversas áreas.
       Conteúdo estudado:
@@ -86,7 +84,6 @@ export const cursos = [
     estado: "Concluído",
     dataConclusao: "22/07/2024",
     duracaoHoras: 90,
-    duracaoTexto: "90 horas",
     descricao: `
       Curso avançado de banco de dados cobrindo múltiplos sistemas.
       Habilidades adquiridas:
@@ -114,7 +111,6 @@ export const cursos = [
     estado: "Concluído",
     dataConclusao: "14/06/2024",
     duracaoHoras: 118,
-    duracaoTexto: "118 horas",
     descricao: `
       Curso completo de análise e visualização de dados com Power BI.
       Conteúdo abordado:
@@ -143,7 +139,6 @@ export const cursos = [
     estado: "Concluído",
     dataConclusao: "03/12/2024",
     duracaoHoras: 44,
-    duracaoTexto: "44 horas",
     descricao: `
       Formação abrangente em programação com foco em fundamentos.
       Conteúdo estudado:
